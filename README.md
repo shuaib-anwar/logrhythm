@@ -1,12 +1,6 @@
-# README #
+# READ ME #
 
-### Instructions ###
-
-* XAMPP Setup
-* My Sql Setup
-* Phalcon Framework [Learn Phalcon](https://docs.phalconphp.com/en/latest/reference/tutorial.html)
-
-### Download Packages ###
+### Download NPM Packages ###
 
 ```
 npm install
@@ -40,12 +34,8 @@ This uses NPM scripts, Gulp, and Webpack together for its build system.
 * Starting a development server
 
 ### Library Used ###
-* Lodash [Here](https://phalconphp.com/en/download/windows)
+* Lodash
 * D3 Charts
-* Karma.
-* Open `C:\xampp\php\php.ini`
-* And goto Line 900; Add extenion `extension=php_phalcon.dll`
-* Detailed Documentaion [Click Here](https://docs.phalconphp.com/en/3.0.2/reference/xampp.html)
 
 #### Contributors ####
 
