@@ -1,0 +1,38 @@
+.home {
+  color: red;
+}
+
+.chart {
+  display: inline-block;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 3px;
+  margin-right: 10px;
+
+  .edit {
+    text-decoration: none;
+    float: right;
+    font-size: 1.6rem;
+    color: #59c2e6;
+    margin: 5px 0;
+    cursor: pointer;
+
+    &:hover {
+      color: #2db2df;
+    }
+  }
+
+  h2.legend {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 5px 0;
+  }
+
+  .bar {
+    fill: #59c2e6;
+
+    &:nth-child(even) {
+      fill: #2db2df;
+    }
+  }
+}

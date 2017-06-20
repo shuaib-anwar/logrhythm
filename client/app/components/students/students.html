@@ -1,0 +1,28 @@
+<mainheader></mainheader>
+<sidebar></sidebar>
+
+<article class="content dashboard-page">
+	<h1>{{ $ctrl.name }}</h1>
+	<section>
+	  <table class="table">
+	  	<tr>
+	  		<th>#</th>
+	  		<th>Name</th>
+	  		<th>Attendence</th>
+	  		<th>Score</th>
+	  	</tr>
+	  	<tr ng-repeat="student in $ctrl.students track by $index">
+	  		<td>{{$index + 1}}</td>
+		  	<td>{{student.name}}</td>
+		  	<td>{{student.attendence}}%</td>
+		  	<td>{{student.score}}%</td>
+	  	</tr>
+	  </table>
+	</section>
+</article>
+<footer class="footer">
+	<div class="footer-block buttons"></div>
+	<div class="footer-block author">
+		<p>created by <a href="https://glo.globallogic.com/users/profile/shueb.anwar" target="_blank">Shuaib Anwar</a> </p>
+	</div>
+</footer>

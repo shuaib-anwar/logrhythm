@@ -1,0 +1,23 @@
+<mainheader></mainheader>
+<sidebar chart-name="{{$ctrl.selectedChartData.name}}" chart-id="{{$ctrl.selectedChartData.id}}" on-save="$ctrl.saveChartName(value, id, sort)"></sidebar>
+
+<article class="content dashboard-page">
+	<div>
+		<div class="chart">
+			<a class="edit" ng-click="$ctrl.edit(0)"><i class="fa fa-cog" aria-hidden="true"></i></a>
+			<h2 class="legend">{{$ctrl.charts[0].name}}</h2>
+			<svg class="attendees" width="450" height="300"></svg>
+		</div>
+		<div class="chart">
+			<a class="edit" ng-click="$ctrl.edit(1)"><i class="fa fa-cog" aria-hidden="true"></i></a>
+			<h2 class="legend">{{$ctrl.charts[1].name}}</h2>
+			<svg class="score" width="450" height="300"></svg>
+		</div>
+	</div>
+</article>
+<footer class="footer">
+	<div class="footer-block buttons"></div>
+	<div class="footer-block author">
+		<p>created by <a href="https://glo.globallogic.com/users/profile/shueb.anwar" target="_blank">Shuaib Anwar</a> </p>
+	</div>
+</footer>

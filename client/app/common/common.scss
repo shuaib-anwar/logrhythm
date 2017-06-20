@@ -1,0 +1,124 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+$primaryColor: #59c2e6;
+$accentColor: #1de9b6;
+$bgColor: #efefef;
+
+$darkBgColor: #3a4651;
+$lightBgColor: #f0f3f6;
+
+$lightTextColor: #7e8e9f;
+$darkTextColor: #4f5f6f;
+
+$gray-alto: #d7dde4;
+$gray-ship: #666;
+
+html {
+  font: 62.5% 'Roboto', sans-serif;
+
+  /* Sets up the Base 10 stuff */
+}
+
+a {
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+
+.app {
+  position: relative;
+  padding-left: 230px;
+  min-height: 100vh;
+  margin: 0 auto;
+  left: 0;
+  background-color: $lightBgColor;
+  box-shadow: 0 0 3px #ccc;
+  -webkit-transition: left 0.3s ease, padding-left 0.3s ease;
+  transition: left 0.3s ease, padding-left 0.3s ease;
+  overflow: hidden;
+
+  .content {
+    padding: 120px 50px 100px 50px;
+  }
+}
+
+.header,
+.footer {
+  position: absolute;
+  left: 230px;
+  right: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.header {
+  background-color: $gray-alto;
+  height: 70px;
+  -webkit-transition: left 0.3s ease;
+  transition: left 0.3s ease;
+  z-index: 10;
+}
+
+.footer {
+  background-color: #fff;
+  bottom: 0;
+  height: 50px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+
+  p {
+    font-size: 1.4rem;
+    padding: 0px 20px;
+
+    a {
+      font-size: 1.4rem;
+      color: $gray-ship;
+    }
+  }
+}
+
+.sidebar {
+  background-color: $darkBgColor;
+  width: 230px;
+  padding-bottom: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  -webkit-transition: left 0.3s ease;
+  transition: left 0.3s ease;
+  z-index: 20;
+
+  img {
+    max-width: 100%;
+    background: #fff;
+    padding: 10px;
+    width: calc(100% - 20px);
+  }
+}
+
+.table {
+  border-collapse: collapse;
+  background-color: transparent;
+  min-width: 500px;
+  width: 100%;
+
+  td, th {
+    font-size: 1.4rem;
+    border: 1px solid #99bfd8;
+    padding: 10px;
+    color: #4f5f6f;
+    text-align: left;
+  }
+
+  tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+}
