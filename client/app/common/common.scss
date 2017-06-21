@@ -37,14 +37,13 @@ a {
   overflow: hidden;
 
   .content {
-    padding: 120px 50px 100px 50px;
+    padding: 100px 40px 100px 40px;
   }
 }
 
 .header,
 .footer {
   position: absolute;
-  left: 230px;
   right: 0;
   display: -webkit-box;
   display: -webkit-flex;
@@ -58,13 +57,13 @@ a {
 
 .header {
   background-color: $gray-alto;
-  height: 70px;
+  height: 60px;
   -webkit-transition: left 0.3s ease;
   transition: left 0.3s ease;
-  z-index: 10;
 }
 
 .footer {
+  left: 230px;
   background-color: #fff;
   bottom: 0;
   height: 50px;
@@ -95,13 +94,6 @@ a {
   -webkit-transition: left 0.3s ease;
   transition: left 0.3s ease;
   z-index: 20;
-
-  img {
-    max-width: 100%;
-    background: #fff;
-    padding: 10px;
-    width: calc(100% - 20px);
-  }
 }
 
 .table {

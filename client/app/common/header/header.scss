@@ -1,5 +1,15 @@
 @import "../common";
 
+.header {
+  left: 0;
+  padding: 0px 20px;
+  z-index: 25;
+
+  img {
+    width: 200px;
+  }
+}
+
 .navbar {
   .nav-links {
     ul {
