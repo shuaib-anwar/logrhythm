@@ -1,19 +1,30 @@
 <aside class="sidebar">
   <img src="https://res.cloudinary.com/crunchbase-production/image/upload/v1397200284/7d5bcc94ab1e913f5aed8a0b638f958d.png" alt="logo">
 
-  <form class="form" ng-if="$ctrl.chartName">
-	  <div class="form-group">
-	  	<label for="chart-name">Name</label>
-	  	<input type="text" class="form-control" id="chart-name" name="chart-name" ng-model="$ctrl.chartName">
-	  </div>
-	  <div class="form-group">
-	  	<label for="chart-name">Sort By</label>
-	  	<select class="form-control" id="chart-name" name="chart-name" ng-model="$ctrl.sort">
-	  		<option ng-repeat="sort in $ctrl.sortArray" value="{{sort.value}}">{{sort.title}}</option>
-	  	</select>
-	  </div>
-	  <div class="form-group">
-	  	<button class="btn btn-primary" ng-click="$ctrl.onSave({value: $ctrl.chartName, id: $ctrl.chartId, sort: $ctrl.sort })">Save</button>
-	  </div>
-  </form>
+  <form class="form" ng-if="$ctrl.chartData.name">
+  		<div class="form-group">
+  			<label>Name Mode</label>
+  			<label class="inline">
+	            <input class="radio" type="radio" name="radios" value="auto" ng-model="$ctrl.mode" checked="checked">
+	            <span>Auto</span>
+	        </label>
+	        <label class="inline">
+	            <input class="radio" type="radio" name="radios" value="custom" ng-model="$ctrl.mode">
+	            <span>Custom</span>
+	        </label>
+  		</div>
+		<div class="form-group" ng-show="$ctrl.mode == 'custom'">
+			<label for="chart-name">Name</label>
+			<input type="text" class="form-control" id="chart-name" name="chart-name" ng-model="$ctrl.chartData.name">
+		</div>
+		<div class="form-group">
+			<label for="chart-name">Sort By</label>
+			<select class="form-control" id="chart-name" name="chart-name" ng-model="$ctrl.chartData.sort">
+				<option ng-repeat="sort in $ctrl.sortArray" value="{{sort.value}}">{{sort.title}}</option>
+			</select>
+		</div>
+		<div class="form-group">
+			<button class="btn btn-primary" ng-click="$ctrl.onSave({chart: $ctrl.getData(), sort: $ctrl.sort });">Save</button>
+		</div>
+	</form>
 </aside>

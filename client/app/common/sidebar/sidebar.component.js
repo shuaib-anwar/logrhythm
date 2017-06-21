@@ -4,8 +4,7 @@ import './sidebar.scss';
 
 let sidebarComponent = {
   bindings: {
-  	chartName: '@',
-  	chartId: '@',
+  	chartData: '@',
   	onSave: '&'
   },
   template,

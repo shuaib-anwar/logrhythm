@@ -37,6 +37,13 @@ This uses NPM scripts, Gulp, and Webpack together for its build system.
 * Lodash
 * D3 Charts
 
+## Testing Setup
+All tests are also written in ES6. We use Webpack to take care of the logistics of getting those files to run in the various browsers.
+* Karma
+* Webpack + Babel
+* Mocha
+* Chai
+
 #### Contributors ####
 
 * Shuaib Anwar <shueb.anwar@globallogic.com>
